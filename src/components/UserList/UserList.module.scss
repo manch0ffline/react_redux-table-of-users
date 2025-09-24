@@ -1,0 +1,11 @@
+.table-user-list {
+  min-width: 100%;
+  
+  & thead {
+    border-bottom: 3px solid #ccc;
+  }
+
+  & th {
+    padding: 10px;
+  }
+}

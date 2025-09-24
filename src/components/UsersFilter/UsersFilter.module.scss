@@ -1,0 +1,60 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+  &__title {
+    font-size: 20px;
+    width: 20%;
+    margin: 0;
+    flex: 2;
+
+    @include on-tablet {
+      flex: none;
+    }
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+    @include on-desktop {
+      width: 50%;
+    }
+  }
+
+  &__input {
+    cursor: pointer;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-inline: 5px;
+    flex: 1;
+
+    transition: all $transition-hover-time ease;
+
+    &:hover {
+      border-radius: 2px;
+      background-color: #e9e9e9;
+    }
+  }
+
+  &__clear {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid #9f9f9f;
+    background-color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @include on-tablet {
+      width: 200px;
+
+    }
+  }
+}

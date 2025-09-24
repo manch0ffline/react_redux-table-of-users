@@ -1,0 +1,13 @@
+.user-row {
+  border-bottom: 1px solid #ccc;
+
+  transition: all $transition-hover-time ease;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &__cell {
+    padding: 15px 10px;
+  }
+}

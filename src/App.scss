@@ -1,0 +1,51 @@
+@import './styles/variables.scss';
+@import './styles/mixins.scss';
+@import './components/UsersFilter/UsersFilter.module.scss';
+@import './components/UserList/UserList.module.scss';
+@import './components/UserItem/UserItem.module.scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  min-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+
+
+  &__container {
+    width: 100%;
+    padding-block: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @include on-tablet {
+      width: 600px;
+    }
+
+    @include on-desktop {
+      width: 1000px;
+    }
+  }
+
+  &__block {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
